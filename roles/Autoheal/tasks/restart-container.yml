@@ -1,8 +1,7 @@
 ---
 # tasks file for Autoheal
-  - name: Restart docker_nodename_1 container
+  - name: Restart container
     docker_container:
       name: docker_{{ node }}_1
-      state: present
-      restarted: yes
+      state: started
 
