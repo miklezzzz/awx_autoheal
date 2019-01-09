@@ -3,3 +3,6 @@
   - name: Test Message
     debug:
       msg: "AWX and Ansible"
+  
+  - name: Get the status of containers
+    shell: docker ps
