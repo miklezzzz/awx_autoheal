@@ -1,0 +1,4 @@
+---
+# tasks for autoheal
+  - include: restart-container.yml
+
