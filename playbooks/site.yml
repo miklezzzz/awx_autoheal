@@ -1,0 +1,8 @@
+---
+- name: Autoheal role
+  hosts: all
+  become: true
+
+  roles:
+    - Autoheal
+
