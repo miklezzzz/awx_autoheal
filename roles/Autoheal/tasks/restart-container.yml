@@ -5,5 +5,5 @@
       project_src: /opt/git-repo/study/miklezzzz_microservices/docker/docker-compose.yml
       services:
         - "{{ node }}"
-      state: start
+      state: present
 
