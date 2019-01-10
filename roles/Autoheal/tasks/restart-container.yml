@@ -1,7 +1,5 @@
 ---
 # tasks file for Autoheal
   - name: Restart service
-    command: docker-compose up {{ node }}
-    args:
-      chdir: /opt/git-repo/study/miklezzzz_microservices/docker
+    command: docker start docker_{{ node }}_1
 
