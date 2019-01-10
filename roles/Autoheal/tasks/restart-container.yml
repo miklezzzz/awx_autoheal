@@ -3,7 +3,7 @@
   - name: Restart service
     command: docker start docker_{{ node }}_1
 
-  - name: Restart post services
-    command: docker start docker_post_db_1; docker start docker_{{ node }}_1
-    when: "{{ 'post' in node}}"
+  - name: Restart post_db services
+    command: docker start docker_post_db_1
+    when: '"post" in node'
 
