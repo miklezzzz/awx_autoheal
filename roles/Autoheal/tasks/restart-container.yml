@@ -1,9 +1,10 @@
 ---
 # tasks file for Autoheal
-  - name: Restart service
-    command: docker start docker_{{ node }}_1
-
   - name: Restart post_db services
     command: docker start docker_post_db_1
     when: '"post" in node'
+
+  - name: Restart service
+    command: docker start docker_{{ node }}_1
+
 
