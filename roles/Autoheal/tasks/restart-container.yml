@@ -1,11 +1,7 @@
 ---
 # tasks file for Autoheal
   - name: Restart service
-    docker_service:
-      project_src: /opt/git-repo/study/miklezzzz_microservices/docker
-      files:
-        - docker-compose.yml
-      services:
-        - "{{ node }}"
-      state: present
+    command: docker-compose up {{ node }}
+    args:
+      chdir: /opt/git-repo/study/miklezzzz_microservices/docker
 
